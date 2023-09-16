@@ -10,3 +10,6 @@ Contains code used in the study.
 
 ## Dataset
 Contains extracted code snippets from the June 2021 Stack Overflow, Arduino, and Raspberry Pi data dump. Also contains post and question information, downloaded CVE information from cvedetails.com, as well as the result of cppcheck analysis (output.xml file) 
+
+## Example of vulnerable code snippets and suggested solutions
+This website contains a few vulnerable code snippets from each weakness category we analyze (https://madhuselvarajj.github.io/IoTCodeWeaknessStackExchange/). We have also provided a safer solution for each code snippet: 
