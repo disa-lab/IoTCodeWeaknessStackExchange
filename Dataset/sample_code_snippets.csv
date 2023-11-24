@@ -1,0 +1,1821 @@
+origin,cwe,location,id,msg,verbose,severity,label
+Arduino,195,"{'file': 'post-57562.c', 'line': '10', 'info': None}",signConversion,Expression &#039;-2&#039; has a negative value. That is converted to an unsigned value and used in an unsigned calculation.,Expression &#039;-2&#039; has a negative value. That is converted to an unsigned value and used in an unsigned calculation.,warning,0
+Arduino,252,"{'file': 'post-39841-2.c', 'line': '9', 'info': None}",ignoredReturnValue,Return value of function atoi() is not used.,Return value of function atoi() is not used.,warning,0
+Arduino,398,"{'file': 'post-44154.c', 'line': '20', 'info': None}",arrayIndexThenCheck,Array index &#039;position&#039; is used before limits check.,Defensive programming: The variable &#039;position&#039; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &#039;(a[i] &amp;&amp; i &lt; 10)&#039; to &#039;(i &lt; 10 &amp;&amp; a[i])&#039;. That way the array will not be accessed if the index is out of limits.,style,0
+Arduino,398,"{'file': 'post-49320.c', 'line': '7', 'info': None}",clarifyCondition,Suspicious condition (bitwise operator + comparison); Clarify expression with parentheses.,Suspicious condition. Comparison operators have higher precedence than bitwise operators. Please clarify the condition with parentheses.,style,0
+Arduino,398,"{'file': 'post-36480.c', 'line': '69', 'info': None}",clarifyCondition,Suspicious condition (assignment + comparison); Clarify expression with parentheses.,Suspicious condition (assignment + comparison); Clarify expression with parentheses.,style,0
+Arduino,398,"{'file': 'post-49320.c', 'line': '7', 'info': None}",clarifyCondition,Boolean result is used in bitwise operation. Clarify expression with parentheses.,Suspicious expression. Boolean result is used in bitwise operation. The operator &#039;!&#039; and the comparison operators have higher precedence than bitwise operators. It is recommended that the expression is clarified with parentheses.,style,0
+Arduino,398,"{'file': 'post-63466.c', 'line': '11', 'info': None}",compareBoolExpressionWithInt,Comparison of a boolean expression with an integer other than 0 or 1.,Comparison of a boolean expression with an integer other than 0 or 1.,warning,1
+Arduino,398,"{'file': 'post-76380.c', 'line': '33', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-72757.c', 'line': '14', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-55910.c', 'line': '12', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-45499.c', 'line': '26', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-52689.c', 'line': '10', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-79476.c', 'line': '5', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,1
+Arduino,398,"{'file': 'post-40316.c', 'line': '110', 'info': None}",duplicateExpression,Same expression on both sides of &#039;-&#039;.,Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.,style,1
+Arduino,398,"{'file': 'post-62238.c', 'line': '12', 'info': None}",duplicateValueTernary,Same value in both branches of ternary operator.,Finding the same value in both branches of ternary operator is suspicious as the same code is executed regardless of the condition.,style,1
+Arduino,398,"{'file': 'post-46361.c', 'line': '43', 'info': 'identical inner condition: voltsOne==5'}",identicalInnerCondition,Identical inner &#039;if&#039; condition is always true.,Identical inner &#039;if&#039; condition is always true (outer condition is &#039;voltsOne==5&#039; and inner condition is &#039;voltsOne==5&#039;).,warning,0
+Arduino,398,"{'file': 'post-37727.c', 'line': '14', 'info': None}",incrementboolean,Incrementing a variable of type &#039;bool&#039; with postfix operator++ is deprecated by the C++ Standard. You should assign it the value &#039;true&#039; instead.,The operand of a postfix increment operator may be of type bool but it is deprecated by C++ Standard (Annex D-1) and the operand is always set to true. You should assign it the value &#039;true&#039; instead.,style,0
+Arduino,398,"{'file': 'post-65794.c', 'line': '28', 'info': None}",incrementboolean,Incrementing a variable of type &#039;bool&#039; with postfix operator++ is deprecated by the C++ Standard. You should assign it the value &#039;true&#039; instead.,The operand of a postfix increment operator may be of type bool but it is deprecated by C++ Standard (Annex D-1) and the operand is always set to true. You should assign it the value &#039;true&#039; instead.,style,0
+Arduino,398,"{'file': 'post-45499.c', 'line': '91', 'info': None}",knownConditionTrueFalse,The comparison &#039;kMatrixSerpentineLayout == true&#039; is always true because &#039;kMatrixSerpentineLayout&#039; and &#039;true&#039; represent the same value.,Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.,style,0
+Arduino,398,"{'file': 'post-46294.c', 'line': '7', 'info': None}",knownConditionTrueFalse,The comparison &#039;x != 0x80&#039; is always false.,Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.,style,0
+Arduino,398,"{'file': 'post-33317-2.c', 'line': '115', 'info': 'else if condition is opposite to first condition'}",multiCondition,Expression is always true because &#039;else if&#039; condition is opposite to previous condition at line 110.,Expression is always true because &#039;else if&#039; condition is opposite to previous condition at line 110.,style,0
+Arduino,398,"{'file': 'post-77181.c', 'line': '183', 'info': 'else if condition is opposite to first condition'}",multiCondition,Expression is always true because &#039;else if&#039; condition is opposite to previous condition at line 179.,Expression is always true because &#039;else if&#039; condition is opposite to previous condition at line 179.,style,0
+Arduino,398,"{'file': 'post-64932.c', 'line': '24', 'info': None}",selfAssignment,Redundant assignment of &#039;count&#039; to itself.,Redundant assignment of &#039;count&#039; to itself.,warning,0
+Arduino,398,"{'file': 'post-57798.c', 'line': '111', 'info': 'Shadow variable'}",shadowArgument,Local variable &#039;channel&#039; shadows outer argument,Local variable &#039;channel&#039; shadows outer argument,style,0
+Arduino,398,"{'file': 'post-56667.c', 'line': '14', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;ultrasonic&#039; shadows outer variable,Local variable &#039;ultrasonic&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-21554.c', 'line': '296', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;ip&#039; shadows outer variable,Local variable &#039;ip&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369-2.c', 'line': '129', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-17504-4.c', 'line': '23', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;now_&#039; shadows outer variable,Local variable &#039;now_&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-78405.c', 'line': '12', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;thispin&#039; shadows outer variable,Local variable &#039;thispin&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369-2.c', 'line': '182', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-55265.c', 'line': '41', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;dutycycle_time&#039; shadows outer variable,Local variable &#039;dutycycle_time&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-76241.c', 'line': '39', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;evt&#039; shadows outer variable,Local variable &#039;evt&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-14050.c', 'line': '19', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;switchOneState&#039; shadows outer variable,Local variable &#039;switchOneState&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-44510.c', 'line': '19', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;foo&#039; shadows outer variable,Local variable &#039;foo&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-9539.c', 'line': '47', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;i&#039; shadows outer variable,Local variable &#039;i&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-36134.c', 'line': '8', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;idex&#039; shadows outer variable,Local variable &#039;idex&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-40316.c', 'line': '221', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;LOAD&#039; shadows outer variable,Local variable &#039;LOAD&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-9767.c', 'line': '21', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;myData&#039; shadows outer variable,Local variable &#039;myData&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-67155.c', 'line': '12', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;i&#039; shadows outer variable,Local variable &#039;i&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-78405.c', 'line': '6', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;thispin&#039; shadows outer variable,Local variable &#039;thispin&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-61130-2.c', 'line': '15', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;len&#039; shadows outer variable,Local variable &#039;len&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369.c', 'line': '145', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-40316.c', 'line': '203', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;TPS&#039; shadows outer variable,Local variable &#039;TPS&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-51810.c', 'line': '60', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;data&#039; shadows outer variable,Local variable &#039;data&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-14050.c', 'line': '20', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;lastSwitchOneState&#039; shadows outer variable,Local variable &#039;lastSwitchOneState&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369.c', 'line': '168', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369-2.c', 'line': '155', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-18875.c', 'line': '32', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;randomnumber&#039; shadows outer variable,Local variable &#039;randomnumber&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-40316.c', 'line': '205', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;LOAD&#039; shadows outer variable,Local variable &#039;LOAD&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-75014.c', 'line': '13', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;openClose&#039; shadows outer variable,Local variable &#039;openClose&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-61477.c', 'line': '18', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;i&#039; shadows outer variable,Local variable &#039;i&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-71369.c', 'line': '123', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;x&#039; shadows outer variable,Local variable &#039;x&#039; shadows outer variable,style,0
+Arduino,398,"{'file': 'post-28138.c', 'line': '11', 'info': None}",uselessAssignmentArg,Assignment of function parameter has no effect outside the function.,Assignment of function parameter has no effect outside the function.,style,0
+Arduino,398,"{'file': 'post-28137.c', 'line': '16', 'info': None}",uselessAssignmentArg,Assignment of function parameter has no effect outside the function.,Assignment of function parameter has no effect outside the function.,style,0
+Arduino,398,"{'file': 'post-33809-2.c', 'line': '31', 'info': None}",variableScope,The scope of the variable &#039;ads1262Count&#039; can be reduced.,"The scope of the variable &#039;ads1262Count&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-76256.c', 'line': '13', 'info': None}",variableScope,The scope of the variable &#039;q&#039; can be reduced.,"The scope of the variable &#039;q&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19007.c', 'line': '58', 'info': None}",variableScope,The scope of the variable &#039;pomask&#039; can be reduced.,"The scope of the variable &#039;pomask&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-18281.c', 'line': '53', 'info': None}",variableScope,The scope of the variable &#039;rcN&#039; can be reduced.,"The scope of the variable &#039;rcN&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-50135.c', 'line': '16', 'info': None}",variableScope,The scope of the variable &#039;pressedbutton&#039; can be reduced.,"The scope of the variable &#039;pressedbutton&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-23742-2.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;val&#039; can be reduced.,"The scope of the variable &#039;val&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-70949.c', 'line': '85', 'info': None}",variableScope,The scope of the variable &#039;cap&#039; can be reduced.,"The scope of the variable &#039;cap&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-43561.c', 'line': '84', 'info': None}",variableScope,The scope of the variable &#039;sample&#039; can be reduced.,"The scope of the variable &#039;sample&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19109.c', 'line': '54', 'info': None}",variableScope,The scope of the variable &#039;rcT&#039; can be reduced.,"The scope of the variable &#039;rcT&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-22357-3.c', 'line': '59', 'info': None}",variableScope,The scope of the variable &#039;allFF&#039; can be reduced.,"The scope of the variable &#039;allFF&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-17614-4.c', 'line': '21', 'info': None}",variableScope,The scope of the variable &#039;data&#039; can be reduced.,"The scope of the variable &#039;data&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-18281.c', 'line': '52', 'info': None}",variableScope,The scope of the variable &#039;rcT&#039; can be reduced.,"The scope of the variable &#039;rcT&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-52241.c', 'line': '18', 'info': None}",variableScope,The scope of the variable &#039;escaped&#039; can be reduced.,"The scope of the variable &#039;escaped&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-81461.c', 'line': '18', 'info': None}",variableScope,The scope of the variable &#039;argument1&#039; can be reduced.,"The scope of the variable &#039;argument1&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-52241-2.c', 'line': '5', 'info': None}",variableScope,The scope of the variable &#039;escaped&#039; can be reduced.,"The scope of the variable &#039;escaped&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-45941.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;state&#039; can be reduced.,"The scope of the variable &#039;state&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-49155.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-30354-3.c', 'line': '37', 'info': None}",variableScope,The scope of the variable &#039;val&#039; can be reduced.,"The scope of the variable &#039;val&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-18221.c', 'line': '52', 'info': None}",variableScope,The scope of the variable &#039;rcT&#039; can be reduced.,"The scope of the variable &#039;rcT&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-49691.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;buffer&#039; can be reduced.,"The scope of the variable &#039;buffer&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-61130-4.c', 'line': '5', 'info': None}",variableScope,The scope of the variable &#039;float_chars&#039; can be reduced.,"The scope of the variable &#039;float_chars&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-52585-2.c', 'line': '22', 'info': None}",variableScope,The scope of the variable &#039;character&#039; can be reduced.,"The scope of the variable &#039;character&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-56049.c', 'line': '12', 'info': None}",variableScope,The scope of the variable &#039;error_count&#039; can be reduced.,"The scope of the variable &#039;error_count&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-17614-2.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;data&#039; can be reduced.,"The scope of the variable &#039;data&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-29137-2.c', 'line': '9', 'info': None}",variableScope,The scope of the variable &#039;position&#039; can be reduced.,"The scope of the variable &#039;position&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-52241-2.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;pos&#039; can be reduced.,"The scope of the variable &#039;pos&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-68437.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;inChar&#039; can be reduced.,"The scope of the variable &#039;inChar&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-49293.c', 'line': '14', 'info': None}",variableScope,The scope of the variable &#039;counter&#039; can be reduced.,"The scope of the variable &#039;counter&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-49302.c', 'line': '33', 'info': None}",variableScope,The scope of the variable &#039;count&#039; can be reduced.,"The scope of the variable &#039;count&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-37714.c', 'line': '74', 'info': None}",variableScope,The scope of the variable &#039;R&#039; can be reduced.,"The scope of the variable &#039;R&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-8278.c', 'line': '119', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-80451.c', 'line': '22', 'info': None}",variableScope,The scope of the variable &#039;yAcc&#039; can be reduced.,"The scope of the variable &#039;yAcc&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-80451.c', 'line': '22', 'info': None}",variableScope,The scope of the variable &#039;xAcc&#039; can be reduced.,"The scope of the variable &#039;xAcc&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-22739.c', 'line': '29', 'info': None}",variableScope,The scope of the variable &#039;bundle&#039; can be reduced.,"The scope of the variable &#039;bundle&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-48654.c', 'line': '103', 'info': None}",variableScope,The scope of the variable &#039;timer&#039; can be reduced.,"The scope of the variable &#039;timer&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-48654.c', 'line': '109', 'info': None}",variableScope,The scope of the variable &#039;readBit&#039; can be reduced.,"The scope of the variable &#039;readBit&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-48654.c', 'line': '17', 'info': None}",variableScope,The scope of the variable &#039;p1&#039; can be reduced.,"The scope of the variable &#039;p1&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-43628.c', 'line': '22', 'info': None}",variableScope,The scope of the variable &#039;index&#039; can be reduced.,"The scope of the variable &#039;index&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-8036.c', 'line': '22', 'info': None}",variableScope,The scope of the variable &#039;deciSeconds&#039; can be reduced.,"The scope of the variable &#039;deciSeconds&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-49691.c', 'line': '7', 'info': None}",variableScope,The scope of the variable &#039;pos&#039; can be reduced.,"The scope of the variable &#039;pos&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19007.c', 'line': '60', 'info': None}",variableScope,The scope of the variable &#039;cc&#039; can be reduced.,"The scope of the variable &#039;cc&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-14352.c', 'line': '119', 'info': None}",variableScope,The scope of the variable &#039;input_pos&#039; can be reduced.,"The scope of the variable &#039;input_pos&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-81461.c', 'line': '20', 'info': None}",variableScope,The scope of the variable &#039;commaLocation&#039; can be reduced.,"The scope of the variable &#039;commaLocation&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-60841.c', 'line': '183', 'info': None}",variableScope,The scope of the variable &#039;pImg&#039; can be reduced.,"The scope of the variable &#039;pImg&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-46270.c', 'line': '24', 'info': None}",variableScope,The scope of the variable &#039;x&#039; can be reduced.,"The scope of the variable &#039;x&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-43901.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;n&#039; can be reduced.,"The scope of the variable &#039;n&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-50682-2.c', 'line': '36', 'info': None}",variableScope,The scope of the variable &#039;sample&#039; can be reduced.,"The scope of the variable &#039;sample&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-41863.c', 'line': '33', 'info': None}",variableScope,The scope of the variable &#039;MSBs&#039; can be reduced.,"The scope of the variable &#039;MSBs&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-37714.c', 'line': '74', 'info': None}",variableScope,The scope of the variable &#039;I&#039; can be reduced.,"The scope of the variable &#039;I&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-78647.c', 'line': '18', 'info': None}",variableScope,The scope of the variable &#039;j&#039; can be reduced.,"The scope of the variable &#039;j&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-80606.c', 'line': '18', 'info': None}",variableScope,The scope of the variable &#039;messageStarted&#039; can be reduced.,"The scope of the variable &#039;messageStarted&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-55894.c', 'line': '7', 'info': None}",variableScope,The scope of the variable &#039;buffer&#039; can be reduced.,"The scope of the variable &#039;buffer&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19007.c', 'line': '58', 'info': None}",variableScope,The scope of the variable &#039;pocode&#039; can be reduced.,"The scope of the variable &#039;pocode&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-26439-2.c', 'line': '11', 'info': None}",variableScope,The scope of the variable &#039;latestSelectedChannel&#039; can be reduced.,"The scope of the variable &#039;latestSelectedChannel&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19109.c', 'line': '55', 'info': None}",variableScope,The scope of the variable &#039;rcN&#039; can be reduced.,"The scope of the variable &#039;rcN&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19007.c', 'line': '59', 'info': None}",variableScope,The scope of the variable &#039;bout&#039; can be reduced.,"The scope of the variable &#039;bout&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-17614-3.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;data&#039; can be reduced.,"The scope of the variable &#039;data&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-50135.c', 'line': '16', 'info': None}",variableScope,The scope of the variable &#039;y&#039; can be reduced.,"The scope of the variable &#039;y&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-80606.c', 'line': '16', 'info': None}",variableScope,The scope of the variable &#039;pos&#039; can be reduced.,"The scope of the variable &#039;pos&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-37340-2.c', 'line': '7', 'info': None}",variableScope,The scope of the variable &#039;pos&#039; can be reduced.,"The scope of the variable &#039;pos&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-19007.c', 'line': '129', 'info': None}",variableScope,The scope of the variable &#039;s&#039; can be reduced.,"The scope of the variable &#039;s&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-76256.c', 'line': '13', 'info': None}",variableScope,The scope of the variable &#039;lim_i&#039; can be reduced.,"The scope of the variable &#039;lim_i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-55516.c', 'line': '90', 'info': None}",variableScope,The scope of the variable &#039;toggle&#039; can be reduced.,"The scope of the variable &#039;toggle&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-37714.c', 'line': '74', 'info': None}",variableScope,The scope of the variable &#039;Q&#039; can be reduced.,"The scope of the variable &#039;Q&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-20885.c', 'line': '26', 'info': None}",variableScope,The scope of the variable &#039;pressureRaw&#039; can be reduced.,"The scope of the variable &#039;pressureRaw&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-34070.c', 'line': '10', 'info': None}",variableScope,The scope of the variable &#039;led1_OnOff&#039; can be reduced.,"The scope of the variable &#039;led1_OnOff&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-72696.c', 'line': '155', 'info': None}",variableScope,The scope of the variable &#039;ch&#039; can be reduced.,"The scope of the variable &#039;ch&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-76256.c', 'line': '13', 'info': None}",variableScope,The scope of the variable &#039;r&#039; can be reduced.,"The scope of the variable &#039;r&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-65816.c', 'line': '117', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,398,"{'file': 'post-80451.c', 'line': '23', 'info': None}",variableScope,The scope of the variable &#039;zGyro&#039; can be reduced.,"The scope of the variable &#039;zGyro&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+Arduino,401,"{'file': 'post-19093.c', 'line': '12', 'info': None}",memleak,Memory leak: a,Memory leak: a,error,0
+Arduino,401,"{'file': 'post-48771.c', 'line': '11', 'info': None}",memleakOnRealloc,Common realloc mistake: &#039;p&#039; nulled but not freed upon failure,Common realloc mistake: &#039;p&#039; nulled but not freed upon failure,error,0
+Arduino,457,"{'file': 'post-78070-2.c', 'line': '24', 'info': None}",uninitvar,Uninitialized variable: dac_value,Uninitialized variable: dac_value,error,0
+Arduino,457,"{'file': 'post-47503.c', 'line': '4', 'info': None}",uninitvar,Uninitialized variable: i,Uninitialized variable: i,error,0
+Arduino,457,"{'file': 'post-65929.c', 'line': '92', 'info': None}",uninitvar,Uninitialized variable: fixedHeadingDegrees,Uninitialized variable: fixedHeadingDegrees,error,0
+Arduino,457,"{'file': 'post-75937.c', 'line': '147', 'info': None}",uninitvar,Uninitialized variable: PERIOD_DESIRED_US,Uninitialized variable: PERIOD_DESIRED_US,error,0
+Arduino,457,"{'file': 'post-72696.c', 'line': '163', 'info': None}",uninitvar,Uninitialized variable: str,Uninitialized variable: str,error,0
+Arduino,467,"{'file': 'post-1447.c', 'line': '4', 'info': None}",sizeofwithsilentarraypointer,Using &#039;sizeof&#039; on array given as function argument returns size of a pointer.,"Using &#039;sizeof&#039; for array given as function argument returns the size of a pointer. It does not return the size of the whole array in bytes as might be expected. For example, this code:
+     int f(char a[100]) {
+         return sizeof(a);
+     }
+returns 4 (in 32-bit systems) or 8 (in 64-bit systems) instead of 100 (the size of the array in bytes).",warning,0
+Arduino,476,"{'file': 'post-215.c', 'line': '13', 'info': 'Null pointer dereference'}",nullPointer,Null pointer dereference: funcPtr,Null pointer dereference: funcPtr,error,0
+Arduino,561,"{'file': 'post-58283.c', 'line': '4', 'info': None}",duplicateBreak,"Consecutive return, break, continue, goto or throw statements are unnecessary.","Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed.",style,0
+Arduino,561,"{'file': 'post-42974.c', 'line': '67', 'info': None}",duplicateBreak,"Consecutive return, break, continue, goto or throw statements are unnecessary.","Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed.",style,0
+Arduino,561,"{'file': 'post-9314.c', 'line': '16', 'info': None}",duplicateBreak,"Consecutive return, break, continue, goto or throw statements are unnecessary.","Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed.",style,0
+Arduino,561,"{'file': 'post-19710.c', 'line': '36', 'info': None}",unreachableCode,"Statements following return, break, continue, goto or throw will never be executed.","Statements following return, break, continue, goto or throw will never be executed.",style,0
+Arduino,562,"{'file': 'post-81464-2.c', 'line': '4', 'info': None}",returnDanglingLifetime,Returning pointer to local variable &#039;buff&#039; that will be invalid when returning.,Returning pointer to local variable &#039;buff&#039; that will be invalid when returning.,error,0
+Arduino,563,"{'file': 'post-71618.c', 'line': '13', 'info': 'ADSK is overwritten'}",redundantAssignment,Variable &#039;ADSK&#039; is reassigned a value before the old one has been used.,Variable &#039;ADSK&#039; is reassigned a value before the old one has been used.,style,0
+Arduino,563,"{'file': 'post-6549.c', 'line': '19', 'info': 'finalss[10] is overwritten'}",redundantAssignment,Variable &#039;finalss[10]&#039; is reassigned a value before the old one has been used.,Variable &#039;finalss[10]&#039; is reassigned a value before the old one has been used.,style,0
+Arduino,563,"{'file': 'post-80731-3.c', 'line': '11', 'info': 'wild_pointer is overwritten'}",redundantAssignment,Variable &#039;wild_pointer&#039; is reassigned a value before the old one has been used.,Variable &#039;wild_pointer&#039; is reassigned a value before the old one has been used.,style,1
+Arduino,570,"{'file': 'post-777.c', 'line': '39', 'info': None}",comparePointers,Comparing pointers that point to different objects,Comparing pointers that point to different objects,error,1
+Arduino,570,"{'file': 'post-70967.c', 'line': '34', 'info': None}",knownConditionTrueFalse,Condition &#039;startTime=0&#039; is always false,Condition &#039;startTime=0&#039; is always false,style,0
+Arduino,570,"{'file': 'post-43565-2.c', 'line': '5', 'info': 'Condition &#039;ihue&gt;255&#039; is always false'}",knownConditionTrueFalse,Condition &#039;ihue&gt;255&#039; is always false,Condition &#039;ihue&gt;255&#039; is always false,style,0
+Arduino,570,"{'file': 'post-8600.c', 'line': '45', 'info': 'Condition &#039;t2==30&#039; is always false'}",knownConditionTrueFalse,Condition &#039;t2==30&#039; is always false,Condition &#039;t2==30&#039; is always false,style,0
+Arduino,571,"{'file': 'post-71618.c', 'line': '14', 'info': 'Condition &#039;ADDO&#039; is always true'}",knownConditionTrueFalse,Condition &#039;ADDO&#039; is always true,Condition &#039;ADDO&#039; is always true,style,0
+Arduino,571,"{'file': 'post-77364.c', 'line': '4', 'info': 'Condition &#039;data&#039; is always true'}",knownConditionTrueFalse,Condition &#039;data&#039; is always true,Condition &#039;data&#039; is always true,style,0
+Arduino,571,"{'file': 'post-71995.c', 'line': '19', 'info': 'Condition &#039;value&lt;=500&#039; is always true'}",knownConditionTrueFalse,Condition &#039;value&lt;=500&#039; is always true,Condition &#039;value&lt;=500&#039; is always true,style,0
+Arduino,571,"{'file': 'post-61306.c', 'line': '238', 'info': 'Condition &#039;myServoFlag==1&#039; is always true'}",knownConditionTrueFalse,Condition &#039;myServoFlag==1&#039; is always true,Condition &#039;myServoFlag==1&#039; is always true,style,0
+Arduino,571,"{'file': 'post-25180.c', 'line': '41', 'info': 'Condition &#039;!loaded&#039; is always true'}",knownConditionTrueFalse,Condition &#039;!loaded&#039; is always true,Condition &#039;!loaded&#039; is always true,style,0
+Arduino,571,"{'file': 'post-76182.c', 'line': '37', 'info': 'Condition &#039;btnPressed&#039; is always true'}",knownConditionTrueFalse,Condition &#039;btnPressed&#039; is always true,Condition &#039;btnPressed&#039; is always true,style,0
+Arduino,571,"{'file': 'post-60282.c', 'line': '304', 'info': 'Condition &#039;ventclosed&#039; is always true'}",knownConditionTrueFalse,Condition &#039;ventclosed&#039; is always true,Condition &#039;ventclosed&#039; is always true,style,0
+Arduino,571,"{'file': 'post-48548.c', 'line': '10', 'info': 'Condition &#039;sensorState==1&#039; is always true'}",knownConditionTrueFalse,Condition &#039;sensorState==1&#039; is always true,Condition &#039;sensorState==1&#039; is always true,style,0
+Arduino,571,"{'file': 'post-61306.c', 'line': '377', 'info': 'Condition &#039;myServoFlag==1&#039; is always true'}",knownConditionTrueFalse,Condition &#039;myServoFlag==1&#039; is always true,Condition &#039;myServoFlag==1&#039; is always true,style,0
+Arduino,571,"{'file': 'post-71618.c', 'line': '9', 'info': 'Condition &#039;ADDO&#039; is always true'}",knownConditionTrueFalse,Condition &#039;ADDO&#039; is always true,Condition &#039;ADDO&#039; is always true,style,0
+Arduino,571,"{'file': 'post-19541-3.c', 'line': '6', 'info': None}",knownConditionTrueFalse,Condition &#039;cool=2&#039; is always true,Condition &#039;cool=2&#039; is always true,style,0
+Arduino,595,"{'file': 'post-48493.c', 'line': '31', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;msg&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;msg&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-33039.c', 'line': '14', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;serialInput&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;serialInput&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-48493.c', 'line': '35', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;msg&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;msg&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-75312.c', 'line': '49', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-78395.c', 'line': '46', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;voice&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;voice&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-52070.c', 'line': '8', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;content.substring(1)&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;content.substring(1)&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-75312.c', 'line': '55', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-75312.c', 'line': '51', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-75312.c', 'line': '48', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;s&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-3954.c', 'line': '28', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;command&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;command&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-78395.c', 'line': '44', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;voice&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;voice&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,595,"{'file': 'post-22408.c', 'line': '23', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;recv&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;recv&#039;. Did you intend to use strcmp() instead?,warning,0
+Arduino,664,"{'file': 'post-201-2.c', 'line': '52', 'info': None}",va_end_missing,va_list &#039;argv&#039; was opened but not closed by va_end().,va_list &#039;argv&#039; was opened but not closed by va_end().,error,0
+Arduino,683,"{'file': 'post-18795.c', 'line': '10', 'info': None}",funcArgOrderDifferent,"Function &#039;functionA&#039; argument order different: declaration &#039;errorMsg, &#039; definition &#039;errorCode, errorMsg&#039;","Function &#039;functionA&#039; argument order different: declaration &#039;errorMsg, &#039; definition &#039;errorCode, errorMsg&#039;",warning,1
+Arduino,686,"{'file': 'post-16003.c', 'line': '49', 'info': None}",invalidScanfArgType_int,%d in format string (no. 2) requires &#039;int *&#039; but the argument type is &#039;signed short *&#039;.,%d in format string (no. 2) requires &#039;int *&#039; but the argument type is &#039;signed short *&#039;.,warning,0
+Arduino,758,"{'file': 'post-43738.c', 'line': '11', 'info': None}",objectIndex,The address of local variable &#039;val&#039; might be accessed at non-zero index.,The address of local variable &#039;val&#039; might be accessed at non-zero index.,warning,0
+Arduino,758,"{'file': 'post-43738.c', 'line': '4', 'info': None}",objectIndex,The address of local variable &#039;val&#039; might be accessed at non-zero index.,The address of local variable &#039;val&#039; might be accessed at non-zero index.,warning,0
+Arduino,768,"{'file': 'post-60282.c', 'line': '351', 'info': None}",unknownEvaluationOrder,Expression &#039;displayMode=++displayMode%8&#039; depends on order of evaluation of side effects,Expression &#039;displayMode=++displayMode%8&#039; depends on order of evaluation of side effects,error,0
+Arduino,783,"{'file': 'post-60282.c', 'line': '377', 'info': None}",clarifyCalculation,Clarify calculation precedence for &#039;&amp;&#039; and &#039;?&#039;.,Suspicious calculation. Please use parentheses to clarify the code. The code &#039;&#039;a&amp;b?c:d&#039;&#039; should be written as either &#039;&#039;(a&amp;b)?c:d&#039;&#039; or &#039;&#039;a&amp;(b?c:d)&#039;&#039;.,style,0
+Arduino,788,"{'file': 'post-57798.c', 'line': '69', 'info': None}",arrayIndexOutOfBounds,"Array &#039;voltage[2]&#039; accessed at index 16, which is out of bounds.","Array &#039;voltage[2]&#039; accessed at index 16, which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-20464.c', 'line': '41', 'info': None}",arrayIndexOutOfBounds,"Array &#039;names[16]&#039; accessed at index 16, which is out of bounds.","Array &#039;names[16]&#039; accessed at index 16, which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-51810.c', 'line': '135', 'info': None}",arrayIndexOutOfBounds,"Array &#039;input[12]&#039; accessed at index 12, which is out of bounds.","Array &#039;input[12]&#039; accessed at index 12, which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-31796.c', 'line': '14', 'info': None}",arrayIndexOutOfBounds,"Array &#039;axisMatrix[50][3]&#039; accessed at index axisMatrix[50][2], which is out of bounds.","Array &#039;axisMatrix[50][3]&#039; accessed at index axisMatrix[50][2], which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-25615.c', 'line': '185', 'info': None}",arrayIndexOutOfBounds,"Array &#039;timeCode[11]&#039; accessed at index 11, which is out of bounds.","Array &#039;timeCode[11]&#039; accessed at index 11, which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-31796.c', 'line': '15', 'info': None}",arrayIndexOutOfBounds,"Array &#039;axisMatrix[50][3]&#039; accessed at index axisMatrix[50][3], which is out of bounds.","Array &#039;axisMatrix[50][3]&#039; accessed at index axisMatrix[50][3], which is out of bounds.",error,0
+Arduino,788,"{'file': 'post-44892.c', 'line': '168', 'info': 'Array index out of bounds'}",arrayIndexOutOfBoundsCond,"Either the condition &#039;lednum&lt;=50&#039; is redundant or the array &#039;Leds[50]&#039; is accessed at index 50, which is out of bounds.","Either the condition &#039;lednum&lt;=50&#039; is redundant or the array &#039;Leds[50]&#039; is accessed at index 50, which is out of bounds.",warning,0
+Arduino,788,"{'file': 'post-65502.c', 'line': '54', 'info': 'Array index out of bounds'}",arrayIndexOutOfBoundsCond,"Either the condition &#039;index&gt;=number_of_readings&#039; is redundant or the array &#039;current_reading[200]&#039; is accessed at index 200, which is out of bounds.","Either the condition &#039;index&gt;=number_of_readings&#039; is redundant or the array &#039;current_reading[200]&#039; is accessed at index 200, which is out of bounds.",warning,0
+Arduino,788,"{'file': 'post-65502.c', 'line': '53', 'info': 'Array index out of bounds'}",arrayIndexOutOfBoundsCond,"Either the condition &#039;index&gt;=number_of_readings&#039; is redundant or the array &#039;current_reading[200]&#039; is accessed at index 200, which is out of bounds.","Either the condition &#039;index&gt;=number_of_readings&#039; is redundant or the array &#039;current_reading[200]&#039; is accessed at index 200, which is out of bounds.",warning,0
+Arduino,788,"{'file': 'post-55266.c', 'line': '23', 'info': None}",bufferAccessOutOfBounds,Buffer is accessed out of bounds: buff,Buffer is accessed out of bounds: buff,error,0
+Arduino,788,"{'file': 'post-19457.c', 'line': '7', 'info': None}",bufferAccessOutOfBounds,Buffer is accessed out of bounds: godz,Buffer is accessed out of bounds: godz,error,0
+RaspberryPi,398,"{'file': 'post-24890-3.c', 'line': '29', 'info': 'identical inner condition: wid&gt;=0'}",identicalInnerCondition,Identical inner &#039;if&#039; condition is always true.,Identical inner &#039;if&#039; condition is always true (outer condition is &#039;wid&gt;=0&#039; and inner condition is &#039;wid&gt;=0&#039;).,warning,0
+RaspberryPi,398,"{'file': 'post-113154.c', 'line': '105', 'info': None}",variableScope,The scope of the variable &#039;h&#039; can be reduced.,"The scope of the variable &#039;h&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-12106.c', 'line': '39', 'info': None}",variableScope,The scope of the variable &#039;new_fd&#039; can be reduced.,"The scope of the variable &#039;new_fd&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-113154.c', 'line': '685', 'info': None}",variableScope,The scope of the variable &#039;retval&#039; can be reduced.,"The scope of the variable &#039;retval&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-22057.c', 'line': '139', 'info': None}",variableScope,The scope of the variable &#039;temp&#039; can be reduced.,"The scope of the variable &#039;temp&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-39225-2.c', 'line': '8', 'info': None}",variableScope,The scope of the variable &#039;bufferIndex&#039; can be reduced.,"The scope of the variable &#039;bufferIndex&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-24890-2.c', 'line': '9', 'info': None}",variableScope,The scope of the variable &#039;lev&#039; can be reduced.,"The scope of the variable &#039;lev&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-89185.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-23767.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;buf&#039; can be reduced.,"The scope of the variable &#039;buf&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-113154.c', 'line': '396', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-24890.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;m&#039; can be reduced.,"The scope of the variable &#039;m&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-81747.c', 'line': '46', 'info': None}",variableScope,The scope of the variable &#039;rowIndex&#039; can be reduced.,"The scope of the variable &#039;rowIndex&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-26217-2.c', 'line': '21', 'info': None}",variableScope,The scope of the variable &#039;j&#039; can be reduced.,"The scope of the variable &#039;j&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,398,"{'file': 'post-78348.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;counter&#039; can be reduced.,"The scope of the variable &#039;counter&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+RaspberryPi,457,"{'file': 'post-7013.c', 'line': '33', 'info': None}",uninitvar,Uninitialized variable: fail,Uninitialized variable: fail,error,0
+RaspberryPi,457,"{'file': 'post-71894.c', 'line': '25', 'info': None}",uninitvar,Uninitialized variable: state,Uninitialized variable: state,error,0
+RaspberryPi,457,"{'file': 'post-7013.c', 'line': '23', 'info': None}",uninitvar,Uninitialized variable: fail,Uninitialized variable: fail,error,0
+RaspberryPi,457,"{'file': 'post-7013.c', 'line': '52', 'info': None}",uninitvar,Uninitialized variable: fail,Uninitialized variable: fail,error,0
+RaspberryPi,467,"{'file': 'post-7434.c', 'line': '56', 'info': None}",arithOperationsOnVoidPointer,"&#039;base-&gt;accessor&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined.","&#039;base-&gt;accessor&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &#039;void *&#039; is a GNU C extension, which defines the &#039;sizeof(void)&#039; to be 1.",portability,0
+RaspberryPi,570,"{'file': 'post-76982-2.c', 'line': '13', 'info': 'Condition &#039;*p==&#039;\\n&#039;&#039; is always false'}",knownConditionTrueFalse,Condition &#039;*p==&#039;\n&#039;&#039; is always false,Condition &#039;*p==&#039;\n&#039;&#039; is always false,style,0
+RaspberryPi,685,"{'file': 'post-12087.c', 'line': '19', 'info': None}",wrongPrintfScanfArgNum,fprintf format string requires 3 parameters but only 2 are given.,fprintf format string requires 3 parameters but only 2 are given.,error,0
+RaspberryPi,686,"{'file': 'post-22683-2.c', 'line': '52', 'info': None}",invalidPrintfArgType_uint,%lu in format string (no. 1) requires &#039;unsigned long&#039; but the argument type is &#039;unsigned int&#039;.,%lu in format string (no. 1) requires &#039;unsigned long&#039; but the argument type is &#039;unsigned int&#039;.,warning,0
+RaspberryPi,686,"{'file': 'post-43600.c', 'line': '76', 'info': None}",invalidPrintfArgType_uint,%u in format string (no. 2) requires &#039;unsigned int&#039; but the argument type is &#039;signed int&#039;.,%u in format string (no. 2) requires &#039;unsigned int&#039; but the argument type is &#039;signed int&#039;.,warning,0
+RaspberryPi,686,"{'file': 'post-49378.c', 'line': '31', 'info': None}",invalidPrintfArgType_uint,%Lx in format string (no. 1) requires &#039;unsigned long long&#039; but the argument type is &#039;unsigned long long&#039;.,%Lx in format string (no. 1) requires &#039;unsigned long long&#039; but the argument type is &#039;unsigned long long&#039;.,warning,0
+RaspberryPi,758,"{'file': 'post-7013.c', 'line': '43', 'info': 'Shift'}",shiftTooManyBitsSigned,Shifting signed 32-bit value by 31 bits is implementation-defined behaviour. See condition at line 40.,Shifting signed 32-bit value by 31 bits is implementation-defined behaviour. See condition at line 40.,portability,0
+StackOverflow_c,190,"{'file': 'post-29460225.c', 'line': '7', 'info': None}",integerOverflow,Signed integer overflow for expression &#039;1&lt;&lt;40&#039;.,Signed integer overflow for expression &#039;1&lt;&lt;40&#039;.,error,0
+StackOverflow_c,190,"{'file': 'post-29460225.c', 'line': '8', 'info': None}",integerOverflow,Signed integer overflow for expression &#039;1&lt;&lt;40&#039;.,Signed integer overflow for expression &#039;1&lt;&lt;40&#039;.,error,0
+StackOverflow_c,252,"{'file': 'post-33693995-2.c', 'line': '50', 'info': None}",ignoredReturnValue,Return value of function clock() is not used.,Return value of function clock() is not used.,warning,0
+StackOverflow_c,252,"{'file': 'post-33693995.c', 'line': '39', 'info': None}",ignoredReturnValue,Return value of function clock() is not used.,Return value of function clock() is not used.,warning,0
+StackOverflow_c,398,"{'file': 'post-32081593.c', 'line': '21', 'info': None}",constStatement,"Found suspicious operator &#039;,&#039;","Found suspicious operator &#039;,&#039;",warning,0
+StackOverflow_c,398,"{'file': 'post-48848599.c', 'line': '51', 'info': None}",knownConditionTrueFalse,The comparison &#039;i == 0&#039; is always true.,Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.,style,0
+StackOverflow_c,398,"{'file': 'post-45528409.c', 'line': '33', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;iv&#039; shadows outer variable,Local variable &#039;iv&#039; shadows outer variable,style,0
+StackOverflow_c,398,"{'file': 'post-17410904-2.c', 'line': '153', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;p&#039; shadows outer variable,Local variable &#039;p&#039; shadows outer variable,style,0
+StackOverflow_c,398,"{'file': 'post-16378017.c', 'line': '9', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;i&#039; shadows outer variable,Local variable &#039;i&#039; shadows outer variable,style,0
+StackOverflow_c,398,"{'file': 'post-24273173.c', 'line': '2', 'info': None}",uselessAssignmentArg,Assignment of function parameter has no effect outside the function.,Assignment of function parameter has no effect outside the function.,style,0
+StackOverflow_c,398,"{'file': 'post-56507333.c', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;rc&#039; can be reduced.,"The scope of the variable &#039;rc&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-30640671.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;b&#039; can be reduced.,"The scope of the variable &#039;b&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-22297863.c', 'line': '10', 'info': None}",variableScope,The scope of the variable &#039;f&#039; can be reduced.,"The scope of the variable &#039;f&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-20324420.c', 'line': '5', 'info': None}",variableScope,The scope of the variable &#039;b&#039; can be reduced.,"The scope of the variable &#039;b&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-34470137-2.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;msg&#039; can be reduced.,"The scope of the variable &#039;msg&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-36691088.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;byte&#039; can be reduced.,"The scope of the variable &#039;byte&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-56750328.c', 'line': '5', 'info': None}",variableScope,The scope of the variable &#039;haystack_len&#039; can be reduced.,"The scope of the variable &#039;haystack_len&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-14166964.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;tmp&#039; can be reduced.,"The scope of the variable &#039;tmp&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-16978220.c', 'line': '7', 'info': None}",variableScope,The scope of the variable &#039;n&#039; can be reduced.,"The scope of the variable &#039;n&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-41868368-2.c', 'line': '9', 'info': None}",variableScope,The scope of the variable &#039;num&#039; can be reduced.,"The scope of the variable &#039;num&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-49281947.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;value&#039; can be reduced.,"The scope of the variable &#039;value&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-19868780.c', 'line': '8', 'info': None}",variableScope,The scope of the variable &#039;myString&#039; can be reduced.,"The scope of the variable &#039;myString&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-56750328.c', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;repl_len&#039; can be reduced.,"The scope of the variable &#039;repl_len&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-27022738.c', 'line': '23', 'info': None}",variableScope,The scope of the variable &#039;totalDiff&#039; can be reduced.,"The scope of the variable &#039;totalDiff&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-14166964.c', 'line': '23', 'info': None}",variableScope,The scope of the variable &#039;r&#039; can be reduced.,"The scope of the variable &#039;r&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-53728861-2.c', 'line': '9', 'info': None}",variableScope,The scope of the variable &#039;n&#039; can be reduced.,"The scope of the variable &#039;n&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-20779191.c', 'line': '3', 'info': None}",variableScope,The scope of the variable &#039;b&#039; can be reduced.,"The scope of the variable &#039;b&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,398,"{'file': 'post-40713161.c', 'line': '10', 'info': None}",variableScope,The scope of the variable &#039;value&#039; can be reduced.,"The scope of the variable &#039;value&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_c,457,"{'file': 'post-30092615-2.c', 'line': '31', 'info': None}",uninitvar,Uninitialized variable: currSwitch,Uninitialized variable: currSwitch,error,0
+StackOverflow_c,457,"{'file': 'post-26661151.c', 'line': '7', 'info': None}",uninitvar,Uninitialized variable: result,Uninitialized variable: result,error,0
+StackOverflow_c,457,"{'file': 'post-30092615-2.c', 'line': '35', 'info': None}",uninitvar,Uninitialized variable: currSwitch,Uninitialized variable: currSwitch,error,0
+StackOverflow_c,467,"{'file': 'post-27918518.c', 'line': '6', 'info': None}",sizeofwithsilentarraypointer,Using &#039;sizeof&#039; on array given as function argument returns size of a pointer.,"Using &#039;sizeof&#039; for array given as function argument returns the size of a pointer. It does not return the size of the whole array in bytes as might be expected. For example, this code:
+     int f(char a[100]) {
+         return sizeof(a);
+     }
+returns 4 (in 32-bit systems) or 8 (in 64-bit systems) instead of 100 (the size of the array in bytes).",warning,0
+StackOverflow_c,467,"{'file': 'post-3497740-4.c', 'line': '5', 'info': None}",sizeofwithsilentarraypointer,Using &#039;sizeof&#039; on array given as function argument returns size of a pointer.,"Using &#039;sizeof&#039; for array given as function argument returns the size of a pointer. It does not return the size of the whole array in bytes as might be expected. For example, this code:
+     int f(char a[100]) {
+         return sizeof(a);
+     }
+returns 4 (in 32-bit systems) or 8 (in 64-bit systems) instead of 100 (the size of the array in bytes).",warning,0
+StackOverflow_c,477,"{'file': 'post-21149578.c', 'line': '34', 'info': None}",strlwrCalled,Obsolete function &#039;strlwr&#039; called. It is recommended to use &#039;_strlwr&#039; or &#039;_strlwr_s&#039; instead.,Obsolete function &#039;strlwr&#039; called. It is recommended to use &#039;_strlwr&#039; or &#039;_strlwr_s&#039; instead.,style,0
+StackOverflow_c,562,"{'file': 'post-39667998.c', 'line': '6', 'info': None}",returnDanglingLifetime,Returning pointer to local variable &#039;theArray&#039; that will be invalid when returning.,Returning pointer to local variable &#039;theArray&#039; that will be invalid when returning.,error,0
+StackOverflow_c,570,"{'file': 'post-25174645.c', 'line': '19', 'info': 'Condition &#039;n==1&#039; is always false'}",knownConditionTrueFalse,Condition &#039;n==1&#039; is always false,Condition &#039;n==1&#039; is always false,style,0
+StackOverflow_c,570,"{'file': 'post-16725027.c', 'line': '75', 'info': 'Condition &#039;img&#039; is always false'}",knownConditionTrueFalse,Condition &#039;img&#039; is always false,Condition &#039;img&#039; is always false,style,0
+StackOverflow_c,595,"{'file': 'post-16537096.c', 'line': '58', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;inputString&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;inputString&#039;. Did you intend to use strcmp() instead?,warning,0
+StackOverflow_c,595,"{'file': 'post-56772243.c', 'line': '28', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;message_id&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;message_id&#039;. Did you intend to use strcmp() instead?,warning,0
+StackOverflow_c,595,"{'file': 'post-19893013.c', 'line': '42', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;inputString&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;inputString&#039;. Did you intend to use strcmp() instead?,warning,0
+StackOverflow_c,595,"{'file': 'post-43455977-2.c', 'line': '19', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;buff&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;buff&#039;. Did you intend to use strcmp() instead?,warning,0
+StackOverflow_c,595,"{'file': 'post-33453961.c', 'line': '45', 'info': None}",literalWithCharPtrCompare,String literal compared with variable &#039;pm&#039;. Did you intend to use strcmp() instead?,String literal compared with variable &#039;pm&#039;. Did you intend to use strcmp() instead?,warning,0
+StackOverflow_c,628,"{'file': 'post-22235592.c', 'line': '12', 'info': None}",sprintfOverlappingData,Undefined behavior: Variable &#039;buffer&#039; is used as parameter and destination in sprintf().,"The variable &#039;buffer&#039; is used both as a parameter and as destination in sprintf(). The origin and destination buffers overlap. Quote from glibc (C-library) documentation (http://www.gnu.org/software/libc/manual/html_mono/libc.html#Formatted-Output-Functions): &quot;If copying takes place between objects that overlap as a result of a call to sprintf() or snprintf(), the results are undefined.&quot;",error,0
+StackOverflow_c,686,"{'file': 'post-27918518.c', 'line': '6', 'info': None}",invalidPrintfArgType_sint,%ld in format string (no. 3) requires &#039;long&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,%ld in format string (no. 3) requires &#039;long&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,portability,0
+StackOverflow_c,686,"{'file': 'post-27918518.c', 'line': '6', 'info': None}",invalidPrintfArgType_sint,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,portability,0
+StackOverflow_c,686,"{'file': 'post-36190693.c', 'line': '10', 'info': None}",invalidPrintfArgType_sint,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;signed long long&#039;.,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;signed long long&#039;.,warning,0
+StackOverflow_c,686,"{'file': 'post-36190693.c', 'line': '8', 'info': None}",invalidPrintfArgType_sint,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;signed long long&#039;.,%ld in format string (no. 1) requires &#039;long&#039; but the argument type is &#039;signed long long&#039;.,warning,0
+StackOverflow_c,758,"{'file': 'post-29460225.c', 'line': '8', 'info': None}",shiftTooManyBits,Shifting 32-bit value by 40 bits is undefined behaviour,Shifting 32-bit value by 40 bits is undefined behaviour,error,0
+StackOverflow_c,758,"{'file': 'post-29460225.c', 'line': '6', 'info': None}",shiftTooManyBits,Shifting 32-bit value by 40 bits is undefined behaviour,Shifting 32-bit value by 40 bits is undefined behaviour,error,0
+StackOverflow_c,768,"{'file': 'post-22643927.c', 'line': '89', 'info': None}",unknownEvaluationOrder,Expression &#039;p2score=p2score++&#039; depends on order of evaluation of side effects,Expression &#039;p2score=p2score++&#039; depends on order of evaluation of side effects,error,0
+StackOverflow_c,768,"{'file': 'post-22643927.c', 'line': '76', 'info': None}",unknownEvaluationOrder,Expression &#039;p1score=p1score++&#039; depends on order of evaluation of side effects,Expression &#039;p1score=p1score++&#039; depends on order of evaluation of side effects,error,0
+StackOverflow_c,783,"{'file': 'post-33570151.c', 'line': '4', 'info': None}",clarifyStatement,In expression like &#039;*A++&#039; the result of &#039;*&#039; is unused. Did you intend to write &#039;(*A)++;&#039;?,"A statement like &#039;*A++;&#039; might not do what you intended. Postfix &#039;operator++&#039; is executed before &#039;operator*&#039;. Thus, the dereference is meaningless. Did you intend to write &#039;(*A)++;&#039;?",warning,0
+StackOverflow_cpp,190,"{'file': 'post-40451154.cpp', 'line': '5', 'info': None}",integerOverflow,Signed integer overflow for expression &#039;1&lt;&lt;31&#039;.,Signed integer overflow for expression &#039;1&lt;&lt;31&#039;.,error,0
+StackOverflow_cpp,398,"{'file': 'post-21467525-2.cpp', 'line': '37', 'info': None}",assertWithSideEffect,Assert statement calls a function which may have desired side effects: &#039;binding&#039;.,"Non-pure function: &#039;binding&#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug.",warning,0
+StackOverflow_cpp,398,"{'file': 'post-21467525-2.cpp', 'line': '36', 'info': None}",assertWithSideEffect,Assert statement calls a function which may have desired side effects: &#039;pin&#039;.,"Non-pure function: &#039;pin&#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug.",warning,0
+StackOverflow_cpp,398,"{'file': 'post-39855376.cpp', 'line': '36', 'info': None}",catchExceptionByValue,Exception should be caught by reference.,The exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.,style,0
+StackOverflow_cpp,398,"{'file': 'post-56085530.cpp', 'line': '20', 'info': None}",catchExceptionByValue,Exception should be caught by reference.,The exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.,style,0
+StackOverflow_cpp,398,"{'file': 'post-39841866.cpp', 'line': '12', 'info': None}",catchExceptionByValue,Exception should be caught by reference.,The exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.,style,0
+StackOverflow_cpp,398,"{'file': 'post-40623487.cpp', 'line': '19', 'info': None}",catchExceptionByValue,Exception should be caught by reference.,The exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.,style,0
+StackOverflow_cpp,398,"{'file': 'post-36270201.cpp', 'line': '5', 'info': None}",constParameter,Parameter &#039;t&#039; can be declared with const,Parameter &#039;t&#039; can be declared with const,style,0
+StackOverflow_cpp,398,"{'file': 'post-54167315.cpp', 'line': '186', 'info': None}",constParameter,Parameter &#039;elem&#039; can be declared with const,Parameter &#039;elem&#039; can be declared with const,style,0
+StackOverflow_cpp,398,"{'file': 'post-37673354-2.cpp', 'line': '5', 'info': None}",constParameter,Parameter &#039;root&#039; can be declared with const,Parameter &#039;root&#039; can be declared with const,style,0
+StackOverflow_cpp,398,"{'file': 'post-48549454.cpp', 'line': '44', 'info': None}",constVariable,Variable &#039;handlers&#039; can be declared with const,Variable &#039;handlers&#039; can be declared with const,style,0
+StackOverflow_cpp,398,"{'file': 'post-34812896.cpp', 'line': '8', 'info': None}",noConstructor,The class &#039;A&#039; does not have a constructor although it has private member variables.,The class &#039;A&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-27192363.cpp', 'line': '2', 'info': None}",noConstructor,The class &#039;LinkedList&#039; does not have a constructor although it has private member variables.,The class &#039;LinkedList&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-34682045.cpp', 'line': '3', 'info': None}",noConstructor,The class &#039;Derived&#039; does not have a constructor although it has private member variables.,The class &#039;Derived&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-19195767.cpp', 'line': '1', 'info': None}",noConstructor,The class &#039;Foo&#039; does not have a constructor although it has private member variables.,The class &#039;Foo&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-22135948.cpp', 'line': '1', 'info': None}",noConstructor,The class &#039;Test&#039; does not have a constructor although it has private member variables.,The class &#039;Test&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-21506507.cpp', 'line': '1', 'info': None}",noConstructor,The class &#039;output_control&#039; does not have a constructor although it has private member variables.,The class &#039;output_control&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-13493939.cpp', 'line': '6', 'info': None}",noConstructor,The class &#039;MPL3115A2&#039; does not have a constructor although it has private member variables.,The class &#039;MPL3115A2&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-22138528.cpp', 'line': '1', 'info': None}",noConstructor,The class &#039;Test&#039; does not have a constructor although it has private member variables.,The class &#039;Test&#039; does not have a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.,style,0
+StackOverflow_cpp,398,"{'file': 'post-41430662.cpp', 'line': '90', 'info': None}",noCopyConstructor,Class &#039;StateFactory&#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).,Class &#039;StateFactory&#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).,warning,0
+StackOverflow_cpp,398,"{'file': 'post-50203306.cpp', 'line': '17', 'info': None}",noExplicitConstructor,Class &#039;CDScreen&#039; has a constructor with 1 argument that is not explicit.,Class &#039;CDScreen&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-34503416.cpp', 'line': '7', 'info': None}",noExplicitConstructor,Class &#039;ledControler&#039; has a constructor with 1 argument that is not explicit.,Class &#039;ledControler&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-25344516.cpp', 'line': '16', 'info': None}",noExplicitConstructor,Class &#039;Scenario&#039; has a constructor with 1 argument that is not explicit.,Class &#039;Scenario&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-55563092.cpp', 'line': '12', 'info': None}",noExplicitConstructor,Class &#039;temperaturaPOO&#039; has a constructor with 1 argument that is not explicit.,Class &#039;temperaturaPOO&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-37425426.cpp', 'line': '11', 'info': None}",noExplicitConstructor,Class &#039;NECIRrcv&#039; has a constructor with 1 argument that is not explicit.,Class &#039;NECIRrcv&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-43418731.cpp', 'line': '6', 'info': None}",noExplicitConstructor,Class &#039;hexset&#039; has a constructor with 1 argument that is not explicit.,Class &#039;hexset&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-48557412.cpp', 'line': '48', 'info': None}",noExplicitConstructor,Class &#039;clock_observable&#039; has a constructor with 1 argument that is not explicit.,Class &#039;clock_observable&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-36270201.cpp', 'line': '6', 'info': None}",noExplicitConstructor,Class &#039;TempController&#039; has a constructor with 1 argument that is not explicit.,Class &#039;TempController&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-36744053.cpp', 'line': '3', 'info': None}",noExplicitConstructor,Class &#039;web&#039; has a constructor with 1 argument that is not explicit.,Class &#039;web&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-48566767.cpp', 'line': '83', 'info': None}",noExplicitConstructor,Class &#039;account_observable&#039; has a constructor with 1 argument that is not explicit.,Class &#039;account_observable&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-18415021.cpp', 'line': '9', 'info': None}",noExplicitConstructor,Class &#039;LinkedListItem &lt; string &gt;&#039; has a constructor with 1 argument that is not explicit.,Class &#039;LinkedListItem &lt; string &gt;&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-43789817.cpp', 'line': '7', 'info': None}",noExplicitConstructor,Class &#039;Shutter&#039; has a constructor with 1 argument that is not explicit.,Class &#039;Shutter&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-28825798.cpp', 'line': '5', 'info': None}",noExplicitConstructor,Struct &#039;fstring&#039; has a constructor with 1 argument that is not explicit.,Struct &#039;fstring&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-48566767.cpp', 'line': '112', 'info': None}",noExplicitConstructor,Class &#039;temperature_observable&#039; has a constructor with 1 argument that is not explicit.,Class &#039;temperature_observable&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-15599741.cpp', 'line': '7', 'info': None}",noExplicitConstructor,Class &#039;FunctionClass&#039; has a constructor with 1 argument that is not explicit.,Class &#039;FunctionClass&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-25219783.cpp', 'line': '8', 'info': None}",noExplicitConstructor,Class &#039;Foo&#039; has a constructor with 1 argument that is not explicit.,Class &#039;Foo&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-47475409.cpp', 'line': '14', 'info': None}",noExplicitConstructor,Class &#039;AM_2301&#039; has a constructor with 1 argument that is not explicit.,Class &#039;AM_2301&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-8819664.cpp', 'line': '4', 'info': None}",noExplicitConstructor,Class &#039;MyHaltStruct&#039; has a constructor with 1 argument that is not explicit.,Class &#039;MyHaltStruct&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-24758754.cpp', 'line': '4', 'info': None}",noExplicitConstructor,Class &#039;Board&#039; has a constructor with 1 argument that is not explicit.,Class &#039;Board&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-43286729-2.cpp', 'line': '4', 'info': None}",noExplicitConstructor,Class &#039;Light&#039; has a constructor with 1 argument that is not explicit.,Class &#039;Light&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-47719243-3.cpp', 'line': '45', 'info': None}",noExplicitConstructor,Class &#039;RP&#039; has a constructor with 1 argument that is not explicit.,Class &#039;RP&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-57550329.cpp', 'line': '4', 'info': None}",noExplicitConstructor,Class &#039;TestClass &lt; decltype ( doStuff ) &gt;&#039; has a constructor with 1 argument that is not explicit.,Class &#039;TestClass &lt; decltype ( doStuff ) &gt;&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-24760569.cpp', 'line': '30', 'info': None}",noExplicitConstructor,Class &#039;LEDBoard&#039; has a constructor with 1 argument that is not explicit.,Class &#039;LEDBoard&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-1027460.cpp', 'line': '3', 'info': None}",noExplicitConstructor,Class &#039;TestSuite&#039; has a constructor with 1 argument that is not explicit.,Class &#039;TestSuite&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-50203140.cpp', 'line': '7', 'info': None}",noExplicitConstructor,Class &#039;CDFrame&#039; has a constructor with 1 argument that is not explicit.,Class &#039;CDFrame&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-47719243-3.cpp', 'line': '86', 'info': None}",noExplicitConstructor,Class &#039;MD&#039; has a constructor with 1 argument that is not explicit.,Class &#039;MD&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-53613013.cpp', 'line': '10', 'info': None}",noExplicitConstructor,Struct &#039;ByteArray&#039; has a constructor with 1 argument that is not explicit.,Struct &#039;ByteArray&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-55563201.cpp', 'line': '10', 'info': None}",noExplicitConstructor,Class &#039;temperaturaPOO&#039; has a constructor with 1 argument that is not explicit.,Class &#039;temperaturaPOO&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-50203140-2.cpp', 'line': '7', 'info': None}",noExplicitConstructor,Class &#039;CDScreen&#039; has a constructor with 1 argument that is not explicit.,Class &#039;CDScreen&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-41080636.cpp', 'line': '6', 'info': None}",noExplicitConstructor,Class &#039;FTester&#039; has a constructor with 1 argument that is not explicit.,Class &#039;FTester&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-48566767-7.cpp', 'line': '15', 'info': None}",noExplicitConstructor,Class &#039;observer_base&#039; has a constructor with 1 argument that is not explicit.,Class &#039;observer_base&#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.,style,0
+StackOverflow_cpp,398,"{'file': 'post-41430662.cpp', 'line': '90', 'info': None}",noOperatorEq,Class &#039;StateFactory&#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).,Class &#039;StateFactory&#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).,warning,0
+StackOverflow_cpp,398,"{'file': 'post-53939190.cpp', 'line': '36', 'info': None}",passedByValue,Function parameter &#039;name&#039; should be passed by const reference.,Parameter &#039;name&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-53939190.cpp', 'line': '16', 'info': None}",passedByValue,Function parameter &#039;name&#039; should be passed by const reference.,Parameter &#039;name&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-15524630.cpp', 'line': '1', 'info': None}",passedByValue,Function parameter &#039;percentage&#039; should be passed by const reference.,Parameter &#039;percentage&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-15524630.cpp', 'line': '2', 'info': None}",passedByValue,Function parameter &#039;liquid&#039; should be passed by const reference.,Parameter &#039;liquid&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-18415021.cpp', 'line': '23', 'info': None}",passedByValue,Function parameter &#039;value&#039; should be passed by const reference.,Parameter &#039;value&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-21467525.cpp', 'line': '4', 'info': None}",passedByValue,Function parameter &#039;pins&#039; should be passed by const reference.,Parameter &#039;pins&#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++.,performance,0
+StackOverflow_cpp,398,"{'file': 'post-15522215.cpp', 'line': '3', 'info': None}",publicAllocationError,Possible leak in public function. The pointer &#039;dataPtr&#039; is not deallocated before it is allocated.,Possible leak in public function. The pointer &#039;dataPtr&#039; is not deallocated before it is allocated.,warning,0
+StackOverflow_cpp,398,"{'file': 'post-53237093.cpp', 'line': '144', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;ret&#039; shadows outer variable,Local variable &#039;ret&#039; shadows outer variable,style,0
+StackOverflow_cpp,398,"{'file': 'post-34582497-2.cpp', 'line': '7', 'info': 'Shadow variable'}",shadowVariable,Local variable &#039;val_in_EEPROM&#039; shadows outer variable,Local variable &#039;val_in_EEPROM&#039; shadows outer variable,style,0
+StackOverflow_cpp,398,"{'file': 'post-35843096.cpp', 'line': '14', 'info': None}",uninitMemberVar,Member variable &#039;pH::Stable&#039; is not initialized in the constructor.,Member variable &#039;pH::Stable&#039; is not initialized in the constructor.,warning,0
+StackOverflow_cpp,398,"{'file': 'post-18415021.cpp', 'line': '24', 'info': None}",useInitializationList,Variable &#039;_value&#039; is assigned in constructor body. Consider performing initialization in initialization list.,"When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&#039;t explicitly write them to the initialization list. You could avoid assigning &#039;_value&#039; a value by passing the value to the constructor in the initialization list.",performance,0
+StackOverflow_cpp,398,"{'file': 'post-41430662.cpp', 'line': '65', 'info': None}",useInitializationList,Variable &#039;x&#039; is assigned in constructor body. Consider performing initialization in initialization list.,"When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&#039;t explicitly write them to the initialization list. You could avoid assigning &#039;x&#039; a value by passing the value to the constructor in the initialization list.",performance,0
+StackOverflow_cpp,398,"{'file': 'post-34597599.cpp', 'line': '2', 'info': None}",uselessAssignmentArg,Assignment of function parameter has no effect outside the function.,Assignment of function parameter has no effect outside the function.,style,0
+StackOverflow_cpp,398,"{'file': 'post-48603804.cpp', 'line': '7', 'info': None}",uselessAssignmentPtrArg,Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?,Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?,warning,0
+StackOverflow_cpp,398,"{'file': 'post-48603804.cpp', 'line': '4', 'info': None}",uselessAssignmentPtrArg,Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?,Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?,warning,0
+StackOverflow_cpp,398,"{'file': 'post-24759886.cpp', 'line': '42', 'info': None}",useStlAlgorithm,"Consider using std::any_of, std::all_of, std::none_of, or std::accumulate algorithm instead of a raw loop.","Consider using std::any_of, std::all_of, std::none_of, or std::accumulate algorithm instead of a raw loop.",style,0
+StackOverflow_cpp,398,"{'file': 'post-33395761-2.cpp', 'line': '13', 'info': None}",variableScope,The scope of the variable &#039;last_input_value&#039; can be reduced.,"The scope of the variable &#039;last_input_value&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-50279664.cpp', 'line': '8', 'info': None}",variableScope,The scope of the variable &#039;c&#039; can be reduced.,"The scope of the variable &#039;c&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-36561669-2.cpp', 'line': '15', 'info': None}",variableScope,The scope of the variable &#039;Remainder&#039; can be reduced.,"The scope of the variable &#039;Remainder&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-51823413.cpp', 'line': '11', 'info': None}",variableScope,The scope of the variable &#039;outfilename&#039; can be reduced.,"The scope of the variable &#039;outfilename&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-46465908.cpp', 'line': '62', 'info': None}",variableScope,The scope of the variable &#039;valid&#039; can be reduced.,"The scope of the variable &#039;valid&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-51640003.cpp', 'line': '70', 'info': None}",variableScope,The scope of the variable &#039;rc&#039; can be reduced.,"The scope of the variable &#039;rc&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-51823413.cpp', 'line': '8', 'info': None}",variableScope,The scope of the variable &#039;fp&#039; can be reduced.,"The scope of the variable &#039;fp&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-43824307-3.cpp', 'line': '8', 'info': None}",variableScope,The scope of the variable &#039;i&#039; can be reduced.,"The scope of the variable &#039;i&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-21607031.cpp', 'line': '5', 'info': None}",variableScope,The scope of the variable &#039;tmp&#039; can be reduced.,"The scope of the variable &#039;tmp&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-51640003.cpp', 'line': '71', 'info': None}",variableScope,The scope of the variable &#039;check&#039; can be reduced.,"The scope of the variable &#039;check&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-23634960.cpp', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;p&#039; can be reduced.,"The scope of the variable &#039;p&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-33325411.cpp', 'line': '16', 'info': None}",variableScope,The scope of the variable &#039;a2dVol&#039; can be reduced.,"The scope of the variable &#039;a2dVol&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-24996105-2.cpp', 'line': '6', 'info': None}",variableScope,The scope of the variable &#039;uNibble&#039; can be reduced.,"The scope of the variable &#039;uNibble&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-33325411-2.cpp', 'line': '18', 'info': None}",variableScope,The scope of the variable &#039;a2dVol&#039; can be reduced.,"The scope of the variable &#039;a2dVol&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-21607031.cpp', 'line': '4', 'info': None}",variableScope,The scope of the variable &#039;count&#039; can be reduced.,"The scope of the variable &#039;count&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-21035211.cpp', 'line': '33', 'info': None}",variableScope,The scope of the variable &#039;duration&#039; can be reduced.,"The scope of the variable &#039;duration&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-47901638-2.cpp', 'line': '30', 'info': None}",variableScope,The scope of the variable &#039;reading&#039; can be reduced.,"The scope of the variable &#039;reading&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,398,"{'file': 'post-19894433.cpp', 'line': '2', 'info': None}",variableScope,The scope of the variable &#039;state&#039; can be reduced.,"The scope of the variable &#039;state&#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &#039;i&#039; can be reduced:
+void f(int x)
+{
+    int i = 0;
+    if (x) {
+        // it&#039;s safe to move &#039;int i = 0;&#039; here
+        for (int n = 0; n &lt; 10; ++n) {
+            // it is possible but not safe to move &#039;int i = 0;&#039; here
+            do_something(&amp;i);
+        }
+    }
+}
+When you see this message it is always safe to reduce the variable scope 1 level.",style,0
+StackOverflow_cpp,401,"{'file': 'post-37585008-2.cpp', 'line': '7', 'info': None}",memleak,Memory leak: byteData,Memory leak: byteData,error,0
+StackOverflow_cpp,457,"{'file': 'post-45398726.cpp', 'line': '10', 'info': None}",uninitvar,Uninitialized variable: ret,Uninitialized variable: ret,error,0
+StackOverflow_cpp,457,"{'file': 'post-54273915-2.cpp', 'line': '34', 'info': None}",uninitvar,Uninitialized variable: strtokIndx,Uninitialized variable: strtokIndx,error,0
+StackOverflow_cpp,457,"{'file': 'post-24759886.cpp', 'line': '42', 'info': None}",uninitvar,Uninitialized variable: shutdown,Uninitialized variable: shutdown,error,0
+StackOverflow_cpp,467,"{'file': 'post-30382989.cpp', 'line': '20', 'info': None}",arithOperationsOnVoidPointer,"&#039;map_base&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined.","&#039;map_base&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &#039;void *&#039; is a GNU C extension, which defines the &#039;sizeof(void)&#039; to be 1.",portability,0
+StackOverflow_cpp,467,"{'file': 'post-30382989.cpp', 'line': '48', 'info': None}",arithOperationsOnVoidPointer,"&#039;map_base&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined.","&#039;map_base&#039; is of type &#039;void *&#039;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &#039;void *&#039; is a GNU C extension, which defines the &#039;sizeof(void)&#039; to be 1.",portability,0
+StackOverflow_cpp,467,"{'file': 'post-25580526-2.cpp', 'line': '24', 'info': None}",pointerSize,Size of pointer &#039;buffer&#039; used instead of size of its data.,Size of pointer &#039;buffer&#039; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &#039;sizeof(*buffer)&#039;.,warning,0
+StackOverflow_cpp,477,"{'file': 'post-49121546.cpp', 'line': '10', 'info': None}",strdupCalled,Obsolete function &#039;strdup&#039; called. It is recommended to use &#039;_strdup&#039; instead.,Obsolete function &#039;strdup&#039; called. It is recommended to use &#039;_strdup&#039; instead.,style,0
+StackOverflow_cpp,563,"{'file': 'post-26087477.cpp', 'line': '21', 'info': 'down is overwritten'}",redundantInitialization,Redundant initialization for &#039;down&#039;. The initialized value is overwritten before it is read.,Redundant initialization for &#039;down&#039;. The initialized value is overwritten before it is read.,style,0
+StackOverflow_cpp,570,"{'file': 'post-31754875.cpp', 'line': '55', 'info': 'Condition &#039;weiter==1&#039; is always false'}",knownConditionTrueFalse,Condition &#039;weiter==1&#039; is always false,Condition &#039;weiter==1&#039; is always false,style,1
+StackOverflow_cpp,570,"{'file': 'post-24759886.cpp', 'line': '23', 'info': 'Condition &#039;used_ports&amp;partition&#039; is always false'}",knownConditionTrueFalse,Condition &#039;used_ports&amp;partition&#039; is always false,Condition &#039;used_ports&amp;partition&#039; is always false,style,0
+StackOverflow_cpp,571,"{'file': 'post-37424512-3.cpp', 'line': '6', 'info': 'Condition &#039;firstRun&#039; is always true'}",knownConditionTrueFalse,Condition &#039;firstRun&#039; is always true,Condition &#039;firstRun&#039; is always true,style,0
+StackOverflow_cpp,571,"{'file': 'post-23735596.cpp', 'line': '42', 'info': None}",knownConditionTrueFalse,Condition &#039;indicator=1&#039; is always true,Condition &#039;indicator=1&#039; is always true,style,0
+StackOverflow_cpp,685,"{'file': 'post-26484776.cpp', 'line': '67', 'info': None}",wrongPrintfScanfArgNum,sprintf format string requires 0 parameters but 1 is given.,sprintf format string requires 0 parameters but 1 is given.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-35484971.cpp', 'line': '139', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;unsigned int&#039;.,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;unsigned int&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-28501330.cpp', 'line': '32', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;unsigned int&#039;.,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;unsigned int&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-54273915.cpp', 'line': '3', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 4) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,%d in format string (no. 4) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-54273915-2.cpp', 'line': '31', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 4) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,%d in format string (no. 4) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-54273915.cpp', 'line': '3', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 8) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,%d in format string (no. 8) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-54273915.cpp', 'line': '3', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 6) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,%d in format string (no. 6) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-54273915-2.cpp', 'line': '31', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 8) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,%d in format string (no. 8) requires &#039;int&#039; but the argument type is &#039;char *&#039;.,warning,0
+StackOverflow_cpp,686,"{'file': 'post-31507923.cpp', 'line': '6', 'info': None}",invalidPrintfArgType_sint,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,%d in format string (no. 1) requires &#039;int&#039; but the argument type is &#039;size_t {aka unsigned long}&#039;.,portability,0
+StackOverflow_cpp,686,"{'file': 'post-33265128.cpp', 'line': '117', 'info': None}",invalidPrintfArgType_uint,%u in format string (no. 2) requires &#039;unsigned int&#039; but the argument type is &#039;signed int&#039;.,%u in format string (no. 2) requires &#039;unsigned int&#039; but the argument type is &#039;signed int&#039;.,warning,0
+StackOverflow_cpp,704,"{'file': 'post-23242578.cpp', 'line': '3', 'info': None}",invalidPointerCast,Casting from float * to unsigned long * is not portable due to different binary data representations on different platforms.,Casting from float * to unsigned long * is not portable due to different binary data representations on different platforms.,portability,0
+StackOverflow_cpp,758,"{'file': 'post-36435715.cpp', 'line': '10', 'info': None}",AssignmentIntegerToAddress,Assigning an integer to a pointer is not portable.,"Assigning an integer (int/long/etc) to a pointer is not portable across different platforms and compilers. For example in 32-bit Windows and linux they are same width, but in 64-bit Windows and linux they are of different width. In worst case you end up assigning 64-bit integer to 32-bit pointer. The safe way is to store addresses only in pointer types (or typedefs like uintptr_t).",portability,0
+StackOverflow_cpp,758,"{'file': 'post-57499584-3.cpp', 'line': '9', 'info': None}",objectIndex,The address of local variable &#039;dest&#039; might be accessed at non-zero index.,The address of local variable &#039;dest&#039; might be accessed at non-zero index.,warning,0
+StackOverflow_cpp,758,"{'file': 'post-40451154.cpp', 'line': '5', 'info': None}",shiftTooManyBitsSigned,Shifting signed 32-bit value by 31 bits is implementation-defined behaviour,Shifting signed 32-bit value by 31 bits is implementation-defined behaviour,portability,0
+StackOverflow_cpp,783,"{'file': 'post-4524111.cpp', 'line': '26', 'info': None}",clarifyCalculation,Clarify calculation precedence for &#039;&amp;&#039; and &#039;?&#039;.,Suspicious calculation. Please use parentheses to clarify the code. The code &#039;&#039;a&amp;b?c:d&#039;&#039; should be written as either &#039;&#039;(a&amp;b)?c:d&#039;&#039; or &#039;&#039;a&amp;(b?c:d)&#039;&#039;.,style,1
+StackOverflow_cpp,788,"{'file': 'post-21035211.cpp', 'line': '36', 'info': None}",arrayIndexOutOfBounds,"Array &#039;beat[18]&#039; accessed at index 71, which is out of bounds.","Array &#039;beat[18]&#039; accessed at index 71, which is out of bounds.",error,0
+StackOverflow_cpp,788,"{'file': 'post-19889148-2.cpp', 'line': '18', 'info': None}",arrayIndexOutOfBounds,"Array &#039;codes[11][4]&#039; accessed at index codes[0][10], which is out of bounds.","Array &#039;codes[11][4]&#039; accessed at index codes[0][10], which is out of bounds.",error,1
+StackOverflow_cpp,788,"{'file': 'post-21035211.cpp', 'line': '37', 'info': None}",arrayIndexOutOfBounds,"Array &#039;notes[21]&#039; accessed at index 71, which is out of bounds.","Array &#039;notes[21]&#039; accessed at index 71, which is out of bounds.",error,0
